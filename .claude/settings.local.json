@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/nakashima/secom-homepage/css /Users/nakashima/secom-homepage/js /Users/nakashima/secom-homepage/images)",
+      "Bash(chromium-cli --session secom-homepage)",
+      "Bash(node -e \"require.resolve\\('playwright'\\)\")",
+      "Bash(node check.js)",
+      "Bash(node check2.js)",
+      "Bash(node check3.js)",
+      "Bash(pkill -f \"http.server 8123\")",
+      "Bash(rm -rf /tmp/pw-check)"
+    ],
+    "additionalDirectories": [
+      "/Users/nakashima/secom-homepage"
+    ]
+  }
+}

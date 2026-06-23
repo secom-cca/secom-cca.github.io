@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>分野横断型気候変動適応支援基盤 | A Cross-sectoral Climate Adaptation Support Platform</title>
+  <meta name="description" content="中長期未来構想のための分野横断型気候変動適応支援基盤の構築。分野横断モデリング・参加型ワークショップ・ゲーム理論・AI支援を組み合わせ、不確実な未来における適応パスウェイの設計と社会実装を支援する研究プロジェクトです。">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav">
+      <a href="index.html" class="nav__brand">
+        <img src="images/logo-mark.svg" alt="">
+        <span class="nav__brand-text">
+          <span class="nav__brand-en">Cross-sectoral Climate Adaptation Platform</span>
+          <span class="nav__brand-jp">分野横断型気候変動適応支援基盤</span>
+        </span>
+      </a>
+      <div class="nav__right">
+        <div class="lang-switch">
+          <button class="lang-switch__btn is-active" data-lang="ja">JA</button>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <button class="nav__toggle" aria-label="メニューを開く" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav__links">
+        <a href="index.html" class="is-active" data-lang-ja>ホーム</a>
+        <a href="index.html" class="is-active" data-lang-en>Home</a>
+        <a href="wg1.html" data-lang-ja>WG1：分野横断モデリング</a>
+        <a href="wg1.html" data-lang-en>WG1: Integrated System Modeling</a>
+        <a href="wg2.html" data-lang-ja>WG2：参加型WS・意思決定支援</a>
+        <a href="wg2.html" data-lang-en>WG2: Serious-Game &amp; Workshop</a>
+        <a href="wg3.html" data-lang-ja>WG3：協調メカニズムデザイン</a>
+        <a href="wg3.html" data-lang-en>WG3: Collaborative Mechanism Design</a>
+        <a href="team.html" data-lang-ja>研究体制</a>
+        <a href="team.html" data-lang-en>Research Team</a>
+        <a href="publications.html" data-lang-ja>研究成果</a>
+        <a href="publications.html" data-lang-en>Publications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow">Research Project</p>
+
+        <h1 class="hero__title" data-lang-ja>中長期未来構想のための<br>分野横断型気候変動適応支援基盤の構築</h1>
+        <h1 class="hero__title" data-lang-en>A Cross-sectoral Climate Adaptation Support Platform<br>for Long-term Future Design</h1>
+
+        <p class="hero__subtitle" data-lang-ja>A Cross-sectoral Climate Adaptation Support Platform for Long-term Future Design</p>
+        <p class="hero__subtitle" data-lang-en>分野横断型気候変動適応支援基盤</p>
+
+        <p class="hero__lead" data-lang-ja>
+          気候変動適応を、地域や社会が中長期的にどのような未来を目指すのかを考えるための基盤として位置づけ、
+          分野横断的なモデリング、ゲーム理論・メカニズムデザイン、参加型ワークショップ、AI支援を組み合わせることで、
+          実効的な適応パスウェイの設計と適応の社会実装を支援することを目的としています。
+        </p>
+        <p class="hero__lead" data-lang-en>
+          This project positions climate change adaptation as a foundation for communities and societies to envision
+          their long-term futures, integrating cross-sectoral modeling, game theory and mechanism design,
+          participatory workshops, and AI support to facilitate the design of effective adaptation pathways
+          and their social implementation.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#about" class="btn btn--primary" data-lang-ja>プロジェクトについて</a>
+          <a href="#about" class="btn btn--primary" data-lang-en>About the Project</a>
+          <a href="#research" class="btn btn--ghost" data-lang-ja>研究体制（WG1〜WG3）</a>
+          <a href="#research" class="btn btn--ghost" data-lang-en>Research Framework (WG1–WG3)</a>
+        </div>
+
+        <p class="hero__funder" data-lang-ja>
+          本プロジェクトは、公益財団法人セコム科学技術振興財団 令和6年度一般研究助成の支援を受けて実施しています。
+        </p>
+        <p class="hero__funder" data-lang-en>
+          This project is supported by the SECOM Science and Technology Foundation (FY2024 General Research Grant).
+        </p>
+      </div>
+    </section>
+
+    <!-- About / Position -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header fade-in">
+          <p class="section__eyebrow">Project Overview</p>
+          <h2 class="section__title" data-lang-ja>プロジェクト全体の位置づけ</h2>
+          <h2 class="section__title" data-lang-en>Project Positioning</h2>
+        </div>
+
+        <div class="prose fade-in" data-lang-ja>
+          <p>
+            気候変動適応は、地域や社会が中長期的にどのような未来を目指すのかを考えるための基盤として機能しうる概念です。
+          </p>
+          <p>
+            気候変動の影響は、農業、水資源、自然災害、生態系、健康、都市生活、産業活動など、複数の分野にまたがって現れます。
+            ある分野で有効に見える適応策が、別の分野や地域に副作用をもたらすこともあります。また、将来の気候、人口、土地利用、
+            社会経済条件、さらには人々が重視する目標そのものも変化しうるものです。
+          </p>
+          <p>
+            したがって、実効的な気候変動適応を進めるには、個別分野の施策を積み上げるだけでは不十分です。分野間の相互作用、
+            将来の不確実性、関係者ごとの立場や価値観の違いを踏まえながら、納得感のある中長期的な道筋を描く必要があります。
+          </p>
+          <p>
+            本プロジェクトは、気候変動適応を中長期的な未来構想の基盤として位置づけ、分野横断的なモデリング、
+            ゲーム理論・メカニズムデザイン、参加型ワークショップ、AI支援を組み合わせることで、実効的な適応パスウェイの設計と
+            適応の社会実装を支援することを目的としています。
+          </p>
+        </div>
+        <div class="prose fade-in" data-lang-en>
+          <p>
+            Climate change adaptation can serve as a foundation for communities and societies to envision what kind of future they wish to pursue over the medium to long term.
+          </p>
+          <p>
+            The impacts of climate change span multiple sectors—agriculture, water resources, natural disasters, ecosystems, health, urban life, and industrial activities. An adaptation measure that appears effective in one sector may create unintended consequences in others. Moreover, future climate conditions, population, land use, socioeconomic conditions, and even the goals that people prioritize are all subject to change.
+          </p>
+          <p>
+            Therefore, effective climate change adaptation cannot be achieved merely by accumulating sector-specific measures. It requires drawing a convincing medium- to long-term pathway that accounts for cross-sectoral interactions, future uncertainties, and differences in stakeholder positions and values.
+          </p>
+          <p>
+            This project positions climate change adaptation as a foundation for long-term future design, combining cross-sectoral modeling, game theory and mechanism design, participatory workshops, and AI support to facilitate the design of effective adaptation pathways and their social implementation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenges -->
+    <section class="section section--alt" id="challenges">
+      <div class="container">
+        <div class="section__header fade-in">
+          <p class="section__eyebrow">Challenges</p>
+          <h2 class="section__title" data-lang-ja>社会的課題と学術的課題</h2>
+          <h2 class="section__title" data-lang-en>Societal &amp; Academic Challenges</h2>
+          <p class="section__lead" data-lang-ja>
+            気候変動適応の計画策定は多くの自治体・地域で進む一方、施策検討や実行の現場には、なお複数の課題が残されています。
+          </p>
+          <p class="section__lead" data-lang-en>
+            While adaptation planning has progressed in many municipalities, significant challenges remain in the practical examination and implementation of measures.
+          </p>
+        </div>
+
+        <h3 class="sub-title fade-in" data-lang-ja>社会的課題</h3>
+        <h3 class="sub-title fade-in" data-lang-en>Societal Challenges</h3>
+        <div class="prose fade-in" data-lang-ja>
+          <p>
+            適応策は分野ごとに検討されやすく、分野間・地域間の相互作用が十分に考慮されにくい状況にあります。防災、農業、
+            水資源、生態系、都市生活などは相互に関係しているにもかかわらず、行政組織や政策制度は分野別に分かれていることが
+            多く、適応策の検討はサイロ化しやすい構造になっています。
+          </p>
+          <p>
+            また、将来の不確実性を踏まえた中長期的なロードマップづくりが浸透していません。気候変動影響だけでなく、人口、産業、
+            土地利用、財政、住民意識なども変化するため、現在の評価基準だけで将来の施策を決めることには限界があります。
+          </p>
+          <p>
+            さらに、適応策の実効性には関係者の理解や納得感が不可欠です。自治体内部の部局間連携、市民との対話、産業従事者や
+            地域関係者との協力がなければ、計画は存在しても実行につながりにくいのが現状です。気候変動適応という概念自体が、
+            自治体職員、関係部局、市民に十分に共有されていない場合もあり、適応を専門的な政策概念としてだけでなく、
+            中長期的な地域の未来を考えるための共通言語として普及させることも重要です。
+          </p>
+          <p>
+            本プロジェクトは、これらの社会的課題に対し、分野横断の相互作用を可視化し、不確実な将来を複数のシナリオとして扱い、
+            普及啓発を促しつつ、関係者が共に学びながら適応の道筋を考えるための支援基盤を構築します。
+          </p>
+        </div>
+        <div class="prose fade-in" data-lang-en>
+          <p>
+            Adaptation measures tend to be examined sector by sector, making it difficult to adequately consider cross-sectoral and inter-regional interactions. Despite the interconnections among disaster prevention, agriculture, water resources, ecosystems, and urban life, administrative organizations and policy frameworks are often organized by sector, creating a structure prone to siloed planning.
+          </p>
+          <p>
+            Furthermore, medium- to long-term roadmap development that accounts for future uncertainties has not yet become mainstream. Since not only climate impacts but also population, industry, land use, fiscal conditions, and public awareness are all subject to change, there are inherent limitations in determining future measures based solely on current evaluation criteria.
+          </p>
+          <p>
+            This project addresses these societal challenges by visualizing cross-sectoral interactions, treating uncertain futures through multiple scenarios, and building a support platform that enables stakeholders to learn together while considering adaptation pathways.
+          </p>
+        </div>
+
+        <h3 class="sub-title fade-in" data-lang-ja>学術的課題</h3>
+        <h3 class="sub-title fade-in" data-lang-en>Academic Challenges</h3>
+        <div class="prose fade-in" data-lang-ja>
+          <p>
+            本プロジェクトの学術的課題は、気候変動適応を、個別分野の影響評価や個別施策の最適化にとどめず、
+            複数分野・複数主体・複数時点にまたがる動的かつ学習的な意思決定問題として扱う点にあります。
+          </p>
+          <p>
+            既存研究では、気候変動リスクの相互連関の可視化、適応策のシナジー・トレードオフ、不確実性下の意思決定、
+            参加型モデリング、ゲーム理論による水資源・環境管理の分析などについて、それぞれ重要な蓄積があります。
+            一方で、実際の適応問題ではこれらの要素は分離できません。影響と施策は相互作用し、評価指標は複数存在し、
+            将来は不確実であり、主体ごとに目的や前提が異なります。
+          </p>
+          <p>
+            したがって、本プロジェクトが扱う学術的課題は、既存研究の単なる組み合わせではありません。分野横断の影響・施策関係を
+            モデル化し、そのモデルを不確実性下の適応パスウェイ生成に接続し、さらに参加型ワークショップやゲーム理論を通じて、
+            複数主体の理解、対話、協力、合意形成へと接続する一連の枠組みを構築することにあります。
+          </p>
+          <p data-lang-ja>特に、以下の点が重要な学術的課題となります。</p>
+        </div>
+        <div class="prose fade-in" data-lang-en>
+          <p>
+            The academic challenge of this project lies in treating climate change adaptation not merely as sector-specific impact assessment or individual measure optimization, but as a dynamic, learning-based decision-making problem spanning multiple sectors, stakeholders, and time horizons.
+          </p>
+          <p>
+            Existing research has made significant contributions in areas such as visualizing climate risk interconnections, analyzing synergies and trade-offs of adaptation measures, decision-making under uncertainty, participatory modeling, and game-theoretic analysis of water and environmental resource management. However, in actual adaptation problems, these elements cannot be separated.
+          </p>
+          <p>
+            Therefore, the academic challenge addressed by this project is not simply a combination of existing research. It lies in constructing a comprehensive framework that models cross-sectoral impact-measure relationships, connects these models to adaptation pathway generation under uncertainty, and further links them to multi-stakeholder understanding, dialogue, cooperation, and consensus-building through participatory workshops and game theory.
+          </p>
+          <p>In particular, the following points represent key academic challenges:</p>
+        </div>
+
+        <ul class="check-list fade-in" data-lang-ja>
+          <li>分野横断的な影響・施策関係を、どのようにモデル化し、妥当性を検証するか。</li>
+          <li>不確実性下で、複数の目的指標を持つ適応パスウェイをどのように生成・評価するか。</li>
+          <li>不完全で不確実なモデルを、人間はどのように理解し、信頼し、意思決定に用いるのか。</li>
+          <li>参加者の立場、価値観、前提の違いは、合意形成や意思決定にどう影響するのか。</li>
+          <li>非協力的な意思決定から生じる非効率性を、どのように理論化し、制度設計へ接続するか。</li>
+          <li>AIエージェントや対話支援技術は、学習的・反復的な意思決定・合意形成プロセスをどのように支援できるのか。</li>
+        </ul>
+        <ul class="check-list fade-in" data-lang-en>
+          <li>How can cross-sectoral impact-measure relationships be modeled and validated?</li>
+          <li>How can adaptation pathways with multiple objective indicators be generated and evaluated under uncertainty?</li>
+          <li>How do humans understand, trust, and use incomplete and uncertain models for decision-making?</li>
+          <li>How do differences in participant positions, values, and assumptions affect consensus-building and decision-making?</li>
+          <li>How can inefficiencies arising from non-cooperative decision-making be theorized and connected to institutional design?</li>
+          <li>How can AI agents and dialogue support technologies assist learning-based and iterative decision-making and consensus-building processes?</li>
+        </ul>
+
+        <div class="prose fade-in" data-lang-ja>
+          <p>
+            本プロジェクトは、これらを統合的に扱うことで、気候変動適応における分野横断モデリング、不確実性下の適応パスウェイ設計、
+            参加型意思決定支援、協調メカニズム設計を接続する新たな研究枠組みを構築します。
+          </p>
+        </div>
+        <div class="prose fade-in" data-lang-en>
+          <p>
+            By addressing these challenges in an integrated manner, this project constructs a novel research framework connecting cross-sectoral modeling, adaptation pathway design under uncertainty, participatory decision support, and cooperative mechanism design for climate change adaptation.
+          </p>
+        </div>
+        <div class="fig-hero fade-in">
+          <figure>
+            <img src="images/wg_rbfm.png" alt="複数の分野をまたぐ流域治水の事例">
+            <figcaption data-lang-ja>複数の分野をまたぐ「流域治水」を事例として取り上げて研究しています</figcaption>
+            <figcaption data-lang-en>River Basin Flood Management spanning multiple sectors (as a case study)</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research framework: WG1-3 -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section__header fade-in">
+          <p class="section__eyebrow">Research Framework</p>
+          <h2 class="section__title" data-lang-ja>研究体制：3つのワーキンググループ</h2>
+          <h2 class="section__title" data-lang-en>Research Framework: Three Working Groups</h2>
+          <p class="section__lead" data-lang-ja>
+            本プロジェクトは、WG1（分野横断モデリング）、WG2（参加型ワークショップ・意思決定支援）、
+            WG3（協調メカニズムデザイン）を独立した研究テーマとしてではなく、相互接続した一連の研究プロセスとして位置づけています。
+          </p>
+          <p class="section__lead" data-lang-en>
+            This project positions WG1 (Integrated System Modeling), WG2 (Participatory Workshop &amp; Decision Support),
+            and WG3 (Collaborative Mechanism Design) not as independent research themes but as interconnected research processes.
+          </p>
+        </div>
+
+        <div class="wg-grid">
+          <article class="wg-card fade-in stagger-1">
+            <img src="images/icon-wg1.svg" alt="" class="wg-card__icon">
+            <p class="wg-card__tag">WG1</p>
+            <h3 class="wg-card__title" data-lang-ja>分野横断の相互作用をモデル化し、未来の選択肢をつくる</h3>
+            <h3 class="wg-card__title" data-lang-en>Modeling Cross-sectoral Interactions to Create Future Options</h3>
+            <p class="wg-card__desc" data-lang-ja>
+              防災・農業・水資源・生態系・健康・都市生活など、多様な分野の施策が相互に与える影響をモデル化し、
+              複数の目的指標と不確実性を踏まえた適応パスウェイ候補を生成します。
+            </p>
+            <p class="wg-card__desc" data-lang-en>
+              Models the mutual impacts of measures across diverse sectors—disaster prevention, agriculture, water resources, ecosystems, health, and urban life—to generate adaptation pathway candidates considering multiple objectives and uncertainty.
+            </p>
+            <a href="wg1.html" class="wg-card__link" data-lang-ja>WG1の詳細を見る →</a>
+            <a href="wg1.html" class="wg-card__link" data-lang-en>Learn more about WG1 →</a>
+          </article>
+
+          <article class="wg-card fade-in stagger-2">
+            <img src="images/icon-wg2.svg" alt="" class="wg-card__icon">
+            <p class="wg-card__tag">WG2</p>
+            <h3 class="wg-card__title" data-lang-ja>モデルを用いて、人が未来をどう理解し、議論し、学ぶかを明らかにする</h3>
+            <h3 class="wg-card__title" data-lang-en>Understanding How People Comprehend, Discuss, and Learn about the Future through Models</h3>
+            <p class="wg-card__desc" data-lang-ja>
+              WG1のモデルをインタラクティブGUI・タンジブルUI・シリアスゲームに変換し、市民・学生・自治体職員との
+              ワークショップを通じて、理解・対話・合意形成・学習のプロセスを分析します。
+            </p>
+            <p class="wg-card__desc" data-lang-en>
+              Transforms WG1's models into interactive GUIs, tangible UIs, and serious games, analyzing processes of understanding, dialogue, consensus-building, and learning through workshops with citizens, students, and government officials.
+            </p>
+            <a href="wg2.html" class="wg-card__link" data-lang-ja>WG2の詳細を見る →</a>
+            <a href="wg2.html" class="wg-card__link" data-lang-en>Learn more about WG2 →</a>
+          </article>
+
+          <article class="wg-card fade-in stagger-3">
+            <img src="images/icon-wg3.svg" alt="" class="wg-card__icon">
+            <p class="wg-card__tag">WG3</p>
+            <h3 class="wg-card__title" data-lang-ja>立場の違いと協力の難しさを理論化し、実効性を高める</h3>
+            <h3 class="wg-card__title" data-lang-en>Theorizing Differences in Positions and Difficulties of Cooperation to Enhance Effectiveness</h3>
+            <p class="wg-card__desc" data-lang-ja>
+              複数主体の意思決定を、目的・信念・情報の違いを含むゲームとして定式化し、ナッシュ均衡や
+              Price of Anarchyの分析を通じて、協力が成立する条件や制度設計の原理を明らかにします。
+            </p>
+            <p class="wg-card__desc" data-lang-en>
+              Formulates multi-stakeholder decision-making as games incorporating differences in objectives, beliefs, and information, revealing conditions for cooperation and principles of institutional design through Nash equilibrium and Price of Anarchy analysis.
+            </p>
+            <a href="wg3.html" class="wg-card__link" data-lang-ja>WG3の詳細を見る →</a>
+            <a href="wg3.html" class="wg-card__link" data-lang-en>Learn more about WG3 →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connections -->
+    <section class="section section--alt" id="connections">
+      <div class="container">
+        <div class="section__header fade-in">
+          <p class="section__eyebrow">How it connects</p>
+          <h2 class="section__title" data-lang-ja>WG間の連続性</h2>
+          <h2 class="section__title" data-lang-en>Inter-WG Connectivity</h2>
+          <p class="section__lead" data-lang-ja>
+            WG1・WG2・WG3は、分野横断的な気候変動適応を実効的にするための相互接続した研究プロセスとして循環的に連携します。
+          </p>
+          <p class="section__lead" data-lang-en>
+            WG1, WG2, and WG3 collaborate cyclically as interconnected research processes to make cross-sectoral climate change adaptation effective.
+          </p>
+        </div>
+
+        <figure class="wg-overview-figure fade-in">
+          <img src="images/wg_all.png" alt="WG1・WG2・WG3の関係を示すプロジェクト全体像">
+          <figcaption data-lang-ja>プロジェクト全体像：3つのWGの関係</figcaption>
+          <figcaption data-lang-en>Project overview: Relationships among the three working groups</figcaption>
+        </figure>
+
+        <div class="connection-grid">
+          <div class="connection-card fade-in stagger-1">
+            <p class="connection-card__path">WG1 <span class="arrow">→</span> WG2</p>
+            <h3 class="connection-card__title" data-lang-ja>モデルから対話へ</h3>
+            <h3 class="connection-card__title" data-lang-en>From Models to Dialogue</h3>
+            <p data-lang-ja>
+              WG1で構築した分野横断モデルやシナリオ・適応パスウェイ候補を、インタラクティブなGUI、タンジブルUI、
+              シリアスゲーム、ワークショップへと変換します。モデルは単なる計算ツールではなく、未来を共に考えるための
+              対話・学習の場となります。
+            </p>
+            <p data-lang-en>
+              Transforms the cross-sectoral models, scenarios, and adaptation pathway candidates built by WG1 into interactive GUIs, tangible UIs, serious games, and workshops. Models become not mere computational tools but platforms for dialogue and learning about the future together.
+            </p>
+          </div>
+
+          <div class="connection-card fade-in stagger-2">
+            <p class="connection-card__path">WG1 <span class="arrow">→</span> WG3</p>
+            <h3 class="connection-card__title" data-lang-ja>モデルから理論へ</h3>
+            <h3 class="connection-card__title" data-lang-en>From Models to Theory</h3>
+            <p data-lang-ja>
+              WG1のモデルは、施策オプション・評価指標・主体ごとの利得構造・将来シナリオ・不確実性条件を、
+              WG3のゲーム理論分析の構成要素として提供します。
+            </p>
+            <p data-lang-en>
+              WG1's models provide measure options, evaluation indicators, payoff structures for each stakeholder, future scenarios, and uncertainty conditions as components for WG3's game-theoretic analysis.
+            </p>
+          </div>
+
+          <div class="connection-card fade-in stagger-3">
+            <p class="connection-card__path">WG3 <span class="arrow">→</span> WG2</p>
+            <h3 class="connection-card__title" data-lang-ja>理論から実験へ</h3>
+            <h3 class="connection-card__title" data-lang-en>From Theory to Experiment</h3>
+            <p data-lang-ja>
+              WG3で得られた理論的知見（協力が失敗しやすい利得構造、立場の違いによる選択の分岐など）を、
+              シリアスゲームや参加型ワークショップのシナリオとして実装し、理論的予測が実際の意思決定にどの程度
+              現れるかを検証します。
+            </p>
+            <p data-lang-en>
+              Implements theoretical insights from WG3 (payoff structures prone to cooperation failure, choice divergences due to position differences) as scenarios in serious games and participatory workshops, verifying how theoretical predictions manifest in actual decision-making.
+            </p>
+          </div>
+
+          <div class="connection-card fade-in stagger-4">
+            <p class="connection-card__path">WG2 <span class="arrow">→</span> WG1・WG3</p>
+            <h3 class="connection-card__title" data-lang-ja>対話からモデル・理論へ</h3>
+            <h3 class="connection-card__title" data-lang-en>From Dialogue to Models &amp; Theory</h3>
+            <p data-lang-ja>
+              WG2で得られる参加者の行動データ・発話・アンケート結果は、WG1のモデル構造や評価指標の改善、
+              WG3のゲーム理論モデルをより現実的な合意形成メカニズムへと発展させるためのデータとしてフィードバックされます。
+            </p>
+            <p data-lang-en>
+              Participant behavioral data, utterances, and survey results obtained from WG2 are fed back as data to improve WG1's model structure and evaluation indicators, and to develop WG3's game-theoretic models into more realistic consensus-building mechanisms.
+            </p>
+          </div>
+
+          <div class="connection-card connection-card--full fade-in">
+            <p class="connection-card__path">WG1 + WG2 + WG3 <span class="arrow">→</span>
+              <span data-lang-ja>社会実装</span><span data-lang-en>Social Implementation</span>
+            </p>
+            <h3 class="connection-card__title" data-lang-ja>社会実装基盤としての統合</h3>
+            <h3 class="connection-card__title" data-lang-en>Integration as a Social Implementation Platform</h3>
+            <p data-lang-ja>
+              最終的に、WG1の分野横断モデル、WG3の協調メカニズム分析、WG2のワークショップ設計・教育手法を統合し、
+              自治体・市民・教育現場で活用できる分野横断適応支援基盤として実装します。この支援基盤は、特定の最適解を
+              自動的に提示するものではなく、不確実な未来に対してどのような選択肢・トレードオフ・立場の違いが
+              意思決定に影響するのかを可視化し、関係者が共に考え、学び、見直すための基盤です。
+            </p>
+            <p data-lang-en>
+              Ultimately, this integrates WG1's cross-sectoral models, WG3's cooperative mechanism analysis, and WG2's workshop design and educational methods into a cross-sectoral adaptation support platform usable by municipalities, citizens, and educational institutions. This platform does not automatically present specific optimal solutions but visualizes how various options, trade-offs, and stakeholder differences influence decision-making, serving as a foundation for stakeholders to think, learn, and reassess together.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section class="section" id="news">
+      <div class="container">
+        <div class="section__header fade-in">
+          <p class="section__eyebrow">News &amp; Activities</p>
+          <h2 class="section__title" data-lang-ja>最近の活動</h2>
+          <h2 class="section__title" data-lang-en>Recent Activities</h2>
+          <p class="section__lead" data-lang-ja>研究成果・学会発表の詳細は<a href="publications.html">研究成果ページ</a>をご覧ください。</p>
+          <p class="section__lead" data-lang-en>For details on research outputs and presentations, please see the <a href="publications.html">Publications page</a>.</p>
+        </div>
+        <ul class="news-list">
+          <li class="news-item fade-in">
+            <span class="news-item__date" data-lang-ja>2026年6月</span>
+            <span class="news-item__date" data-lang-en>Jun 2026</span>
+            <span class="news-item__body">
+              <span class="news-item__tag" data-lang-ja>論文</span>
+              <span class="news-item__tag" data-lang-en>Paper</span>
+              <span data-lang-ja>
+                Environmental Research Communications 誌に "From silos to coordination: a multi-method systems engineering framework for cross-sector climate adaptation" が掲載されました。
+                <a href="https://iopscience.iop.org/article/10.1088/2515-7620/ae7a02" target="_blank" rel="noopener">[Link]</a>
+              </span>
+              <span data-lang-en>
+                "From silos to coordination: a multi-method systems engineering framework for cross-sector climate adaptation" was published in Environmental Research Communications.
+                <a href="https://iopscience.iop.org/article/10.1088/2515-7620/ae7a02" target="_blank" rel="noopener">[Link]</a>
+              </span>
+            </span>
+          </li>
+          <li class="news-item fade-in">
+            <span class="news-item__date" data-lang-ja>2026年5月</span>
+            <span class="news-item__date" data-lang-en>May 2026</span>
+            <span class="news-item__body">
+              <span class="news-item__tag" data-lang-ja>企画展示</span>
+              <span class="news-item__tag" data-lang-en>Exhibition</span>
+              <span data-lang-ja>東京大学五月祭にて、モデルベースワークショップ・シミュレーションゲームに関する企画展示を行いました。</span>
+              <span data-lang-en>Held an exhibition on model-based workshops and simulation games at the University of Tokyo May Festival.</span>
+            </span>
+          </li>
+          <li class="news-item fade-in">
+            <span class="news-item__date" data-lang-ja>2025年12月</span>
+            <span class="news-item__date" data-lang-en>Dec 2025</span>
+            <span class="news-item__body">
+              <span class="news-item__tag" data-lang-ja>ポスター発表</span>
+              <span class="news-item__tag" data-lang-en>Poster</span>
+              <span data-lang-ja>令和7年度気候変動適応の研究会研究発表会・分科会にて「領域横断影響を踏まえた協調的気候変動適応支援ツールの開発」を発表しました。</span>
+              <span data-lang-en>Presented "Development of a Collaborative Climate Change Adaptation Support Tool Considering Cross-sectoral Impacts" at the FY2025 Climate Change Adaptation Research Meeting.</span>
+            </span>
+          </li>
+          <li class="news-item fade-in">
+            <span class="news-item__date" data-lang-ja>2025年11月</span>
+            <span class="news-item__date" data-lang-en>Nov 2025</span>
+            <span class="news-item__body">
+              <span class="news-item__tag" data-lang-ja>国際学会</span>
+              <span class="news-item__tag" data-lang-en>Conference</span>
+              <span data-lang-ja>
+                12th Annual Meeting of the Society for Decision Making under Deep Uncertaintyにて
+                "Development of a Collaborative Decision Support Tool for Climate Change Adaptation under Deep Uncertainty" を発表しました。
+              </span>
+              <span data-lang-en>
+                Presented "Development of a Collaborative Decision Support Tool for Climate Change Adaptation under Deep Uncertainty"
+                at the 12th Annual Meeting of the Society for Decision Making under Deep Uncertainty.
+              </span>
+            </span>
+          </li>
+          <li class="news-item fade-in">
+            <span class="news-item__date" data-lang-ja>2025年11月</span>
+            <span class="news-item__date" data-lang-en>Nov 2025</span>
+            <span class="news-item__body">
+              <span class="news-item__tag" data-lang-ja>国内学会</span>
+              <span class="news-item__tag" data-lang-en>Conference</span>
+              <span data-lang-ja>計測自動制御学会システム・情報部門学術講演会（SSI2025）にて、本プロジェクトに関する2件の発表を行いました。</span>
+              <span data-lang-en>Two presentations related to this project were given at the SICE System and Information Division Academic Lecture Meeting (SSI2025).</span>
+            </span>
+          </li>
+          <li class="news-item fade-in">
+            <span class="news-item__date" data-lang-ja>2025年10月</span>
+            <span class="news-item__date" data-lang-en>Oct 2025</span>
+            <span class="news-item__body">
+              <span class="news-item__tag" data-lang-ja>国際ワークショップ</span>
+              <span class="news-item__tag" data-lang-en>Workshop</span>
+              <span data-lang-ja>8th Adaptation Futures Conference（Christchurch）にて、流域治水の合意形成に関するワークショップを実施しました。</span>
+              <span data-lang-en>Conducted a workshop on consensus building for watershed flood management at the 8th Adaptation Futures Conference (Christchurch).</span>
+            </span>
+          </li>
+          <li class="news-item fade-in">
+            <span class="news-item__date" data-lang-ja>2025年7月</span>
+            <span class="news-item__date" data-lang-en>Jul 2025</span>
+            <span class="news-item__body">
+              <span class="news-item__tag" data-lang-ja>論文</span>
+              <span class="news-item__tag" data-lang-en>Paper</span>
+              <span data-lang-ja>Advances in Transdisciplinary Engineering 誌に WG1・WG2 に関する2本の論文が掲載されました。</span>
+              <span data-lang-en>Two papers related to WG1 and WG2 were published in Advances in Transdisciplinary Engineering.</span>
+            </span>
+          </li>
+          <li class="news-item fade-in">
+            <span class="news-item__date" data-lang-ja>2025年5月</span>
+            <span class="news-item__date" data-lang-en>May 2025</span>
+            <span class="news-item__body">
+              <span class="news-item__tag" data-lang-ja>企画展示</span>
+              <span class="news-item__tag" data-lang-en>Exhibition</span>
+              <span data-lang-ja>東京大学五月祭にて、モデルベースワークショップ・シミュレーションゲームに関する企画展示を行いました。</span>
+              <span data-lang-en>Held an exhibition on model-based workshops and simulation games at the University of Tokyo May Festival.</span>
+            </span>
+          </li>
+          <li class="news-item fade-in">
+            <span class="news-item__date" data-lang-ja>2024年11月</span>
+            <span class="news-item__date" data-lang-en>Nov 2024</span>
+            <span class="news-item__body">
+              <span class="news-item__tag" data-lang-ja>国際学会</span>
+              <span class="news-item__tag" data-lang-en>Conference</span>
+              <span data-lang-ja>
+                11th Annual Meeting of the Society for Decision Making under Deep Uncertaintyにて
+                "Modeling Inter-sectoral Climate Change Adaptation and Cooperation and Consensus Building Mechanism" を発表しました。
+              </span>
+              <span data-lang-en>
+                Presented "Modeling Inter-sectoral Climate Change Adaptation and Cooperation and Consensus Building Mechanism"
+                at the 11th Annual Meeting of the Society for Decision Making under Deep Uncertainty.
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div>
+        <p class="footer__title">A Cross-sectoral Climate Adaptation Support Platform for Long-term Future Design</p>
+        <p class="footer__sub">中長期未来構想のための分野横断型気候変動適応支援基盤の構築</p>
+      </div>
+      <nav class="footer__links">
+        <a href="index.html" data-lang-ja>ホーム</a>
+        <a href="index.html" data-lang-en>Home</a>
+        <a href="wg1.html" data-lang-ja>WG1：分野横断モデリング</a>
+        <a href="wg1.html" data-lang-en>WG1: Integrated System Modeling</a>
+        <a href="wg2.html" data-lang-ja>WG2：参加型ワークショップ・意思決定支援</a>
+        <a href="wg2.html" data-lang-en>WG2: Serious-Game &amp; Workshop</a>
+        <a href="wg3.html" data-lang-ja>WG3：協調メカニズムデザイン</a>
+        <a href="wg3.html" data-lang-en>WG3: Collaborative Mechanism Design</a>
+        <a href="team.html" data-lang-ja>研究体制</a>
+        <a href="team.html" data-lang-en>Research Team</a>
+        <a href="publications.html" data-lang-ja>研究成果</a>
+        <a href="publications.html" data-lang-en>Publications</a>
+      </nav>
+      <p class="footer__funding" data-lang-ja>
+        本プロジェクトは、公益財団法人セコム科学技術振興財団 令和6年度一般研究助成の支援を受けて実施しています。
+      </p>
+      <p class="footer__funding" data-lang-en>
+        This project is supported by the SECOM Science and Technology Foundation (FY2024 General Research Grant).
+      </p>
+      <p class="footer__copy">&copy; 2026 Cross-sectoral Climate Adaptation Support Platform Project.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
